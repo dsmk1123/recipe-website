@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Delicious Recipes</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Arial;
+    margin: 0;
+    background: #f8f8f8;
+}
+
+header {
+    background: white;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff5200;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ff5200;
+}
+
+.intro {
+    text-align: center;
+    padding: 30px;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 230px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 0 10px;
+    color: gray;
+    font-size: 14px;
+}
+
+.card a {
+    display: block;
+    margin: 10px;
+    padding: 8px;
+    background: #ff5200;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background: #e64a19;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .recipes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Delicious Recipes</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="recipe1.html">Quesadilla</a>
+<a href="recipe2.html">Chicken Wings</a>
+<a href="recipe3.html">Labneh Balls</a>
+<a href="recipe4.html">Club Sandwich</a>
+<a href="recipe5.html">Burger</a>
+</nav>
+
+</header>
+
+<section class="intro">
+<h2>Welcome to My Recipes</h2>
+<p>Explore tasty and easy recipes like your favorite food apps</p>
+</section>
+
+<section class="recipes">
+
+<div class="card">
+<h3>Quesadilla</h3>
+<img src="images/01.jpg">
+<p>Cheesy & crispy delight</p>
+<a href="recipe1.html">View Recipe</a>
+</div>
+
+<div class="card">
+<h3>Spicy Chicken Wings</h3>
+<img src="images/02.jpg">
+<p>Hot & spicy treat</p>
+<a href="recipe2.html">View Recipe</a>
+</div>
+
+<div class="card">
+<h3>Labneh Balls</h3>
+<img src="images/03.jpg">
+<p>Healthy creamy snack</p>
+<a href="recipe3.html">View Recipe</a>
+</div>
+
+<div class="card">
+<h3>Club Sandwich</h3>
+<img src="images/04.jpg">
+<p>Loaded layered sandwich</p>
+<a href="recipe4.html">View Recipe</a>
+</div>
+
+<div class="card">
+<h3>Chicken Burger</h3>
+<img src="images/05.jpg">
+<p>Juicy & tasty burger</p>
+<a href="recipe5.html">View Recipe</a>
+</div>
+
+</section>
+
+<footer>
+<p>Recipes by Dev Siddharth Makin</p>
+</footer>
+
+</body>
+</html>
